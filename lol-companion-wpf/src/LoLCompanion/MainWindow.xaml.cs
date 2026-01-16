@@ -247,9 +247,9 @@ namespace LoLCompanion
                     ChampionStatus.Text = $"{championName} - Build Loaded";
                     
                     // Display items
-                    if (build.Items != null && build.Items.Count > 0)
+                    if (build.ItemIds != null && build.ItemIds.Count > 0)
                     {
-                        var itemNames = string.Join(", ", build.Items.Select(id => GameData.ItemNames.ContainsKey(id) ? GameData.ItemNames[id] : $"Item {id}"));
+                        var itemNames = string.Join(", ", build.ItemIds.Select(id => GameData.ItemNames.ContainsKey(id) ? GameData.ItemNames[id] : $"Item {id}"));
                         CoreItems.Text = itemNames;
                         DebugUtil.LogDebug($"[BUILD] Core items: {itemNames}");
                     }
