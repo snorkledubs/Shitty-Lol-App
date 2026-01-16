@@ -103,8 +103,10 @@ namespace LoLCompanion
                 {
                     var content = await response.Content.ReadAsStringAsync();
                     var phase = System.Text.Json.JsonDocument.Parse(content).RootElement.GetString();
+                    
+                    DebugUtil.LogDebug($"[GAMEFLOW] Phase: {phase}");
 
-                    if (phase == "InGame")
+                    if (phase == "InProgress")
                     {
                         _wasInGame = true;
                         await FetchCurrentChampionInGame();
@@ -116,7 +118,10 @@ namespace LoLCompanion
                     }
                 }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                DebugUtil.LogDebug($"[GAMEFLOW] Error: {ex.Message}");
+            }
         }
 
         private async Task FetchCurrentChampionInGame()

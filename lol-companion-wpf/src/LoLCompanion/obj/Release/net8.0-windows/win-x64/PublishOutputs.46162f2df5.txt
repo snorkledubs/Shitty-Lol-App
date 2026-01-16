@@ -1,0 +1,5 @@
+c:\Users\Azal\Desktop\New folder\azal-publish-v1.0.14\azal.exe
+c:\Users\Azal\Desktop\New folder\azal-publish-v1.0.14\azal.dll
+c:\Users\Azal\Desktop\New folder\azal-publish-v1.0.14\azal.deps.json
+c:\Users\Azal\Desktop\New folder\azal-publish-v1.0.14\azal.runtimeconfig.json
+c:\Users\Azal\Desktop\New folder\azal-publish-v1.0.14\azal.pdb
