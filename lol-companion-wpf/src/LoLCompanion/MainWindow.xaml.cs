@@ -5,6 +5,7 @@ using System.Windows.Media.Imaging;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Threading;
+using System.Linq;
 
 namespace LoLCompanion
 {
