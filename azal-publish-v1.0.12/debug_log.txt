@@ -1,0 +1,58 @@
+[2026-01-15 20:01:46.601] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:01:46.615] [LCU] Credentials updated. Port: 57377
+[2026-01-15 20:01:48.614] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:01:48.614] [STATUS] Credentials set and game state timer started
+[2026-01-15 20:01:48.615] [STATUS] Set UI text to Connected
+[2026-01-15 20:01:50.628] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:01:50.628] [STATUS] Set UI text to Connected
+[2026-01-15 20:01:51.623] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:01:52.669] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:01:52.670] [STATUS] Set UI text to Connected
+[2026-01-15 20:01:54.677] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:01:54.677] [STATUS] Set UI text to Connected
+[2026-01-15 20:01:56.630] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:01:56.692] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:01:56.692] [STATUS] Set UI text to Connected
+[2026-01-15 20:01:58.706] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:01:58.706] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:00.721] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:00.721] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:01.640] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:02:02.720] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:02.721] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:04.716] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:04.716] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:06.644] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:02:06.722] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:06.723] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:08.719] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:08.719] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:10.718] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:10.718] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:11.655] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:02:12.714] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:12.715] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:14.717] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:14.717] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:16.668] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:02:16.714] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:16.715] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:18.711] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:18.711] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:20.725] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:20.725] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:21.679] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:02:22.721] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:22.721] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:24.717] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:24.717] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:26.684] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:02:26.715] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:26.716] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:28.710] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:28.711] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:30.735] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:30.736] [STATUS] Set UI text to Connected
+[2026-01-15 20:02:31.687] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:02:32.732] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:02:32.732] [STATUS] Set UI text to Connected

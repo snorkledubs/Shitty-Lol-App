@@ -107,6 +107,7 @@ namespace LoLCompanion
                     if (phase == "InGame")
                     {
                         _wasInGame = true;
+                        await FetchCurrentChampionInGame();
                     }
                     else if (_wasInGame && phase == "Lobby")
                     {
@@ -116,6 +117,56 @@ namespace LoLCompanion
                 }
             }
             catch { }
+        }
+
+        private async Task FetchCurrentChampionInGame()
+        {
+            try
+            {
+                // Get current summoner info
+                var summonerResponse = await _apiClient.GetAsync("lol-summoner/v1/current-summoner");
+                if (!summonerResponse.IsSuccessStatusCode)
+                    return;
+
+                var summonerContent = await summonerResponse.Content.ReadAsStringAsync();
+                var summonerId = System.Text.Json.JsonDocument.Parse(summonerContent).RootElement
+                    .GetProperty("id").GetString();
+
+                // Get game data to find our champion
+                var gameResponse = await _apiClient.GetAsync("lol-gameflow/v1/session");
+                if (!gameResponse.IsSuccessStatusCode)
+                    return;
+
+                var gameContent = await gameResponse.Content.ReadAsStringAsync();
+                var gameDoc = System.Text.Json.JsonDocument.Parse(gameContent).RootElement;
+
+                if (gameDoc.TryGetProperty("gameData", out var gameDataElem) &&
+                    gameDataElem.TryGetProperty("playerChampionSelections", out var selectionsElem))
+                {
+                    foreach (var selection in selectionsElem.EnumerateArray())
+                    {
+                        if (selection.TryGetProperty("summonerId", out var selSumIdElem) &&
+                            selection.TryGetProperty("championId", out var champIdElem))
+                        {
+                            if (selSumIdElem.GetString() == summonerId)
+                            {
+                                int champId = champIdElem.GetInt32();
+                                var champName = _championData.GetChampionName(champId);
+                                if (!string.IsNullOrEmpty(champName))
+                                {
+                                    ChampionStatus.Text = $"In Game - {champName}";
+                                    DebugUtil.LogDebug($"[IN-GAME] Current champion: {champName}");
+                                }
+                                return;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                DebugUtil.LogDebug($"[IN-GAME] Error fetching champion: {ex.Message}");
+            }
         }
 
         private void ResetBuild()
