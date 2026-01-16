@@ -20,7 +20,13 @@ namespace LoLCompanion
                     var lockfilePath = Path.Combine(LockfileDir, "lockfile");
                     if (File.Exists(lockfilePath))
                     {
-                        var content = File.ReadAllText(lockfilePath);
+                        string content = null;
+                        using (var fileStream = new FileStream(lockfilePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                        using (var reader = new StreamReader(fileStream))
+                        {
+                            content = reader.ReadToEnd();
+                        }
+
                         var parts = content.Split(':');
                         if (parts.Length >= 5)
                         {
@@ -29,8 +35,15 @@ namespace LoLCompanion
                             DebugUtil.LogDebug($"[LOCKFILE] Found client: Port={_clientPort}");
                         }
                     }
+                    else
+                    {
+                        DebugUtil.LogDebug($"[LOCKFILE] Lockfile not found at: {lockfilePath}");
+                    }
                 }
-                catch { }
+                catch (Exception ex)
+                {
+                    DebugUtil.LogDebug($"[LOCKFILE] Error reading lockfile: {ex.Message}");
+                }
 
                 await Task.Delay(5000);
             }
