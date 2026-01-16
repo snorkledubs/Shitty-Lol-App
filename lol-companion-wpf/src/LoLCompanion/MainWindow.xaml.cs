@@ -128,45 +128,49 @@ namespace LoLCompanion
         {
             try
             {
-                // Get current summoner info
-                var summonerResponse = await _apiClient.GetAsync("lol-summoner/v1/current-summoner");
-                if (!summonerResponse.IsSuccessStatusCode)
+                // Get active player data - simpler endpoint
+                var playerResponse = await _apiClient.GetAsync("lol-summoner/v1/current-summoner");
+                if (!playerResponse.IsSuccessStatusCode)
                     return;
 
-                var summonerContent = await summonerResponse.Content.ReadAsStringAsync();
-                var summonerId = System.Text.Json.JsonDocument.Parse(summonerContent).RootElement
+                var playerContent = await playerResponse.Content.ReadAsStringAsync();
+                var summonerId = System.Text.Json.JsonDocument.Parse(playerContent).RootElement
                     .GetProperty("id").GetString();
 
-                // Get game data to find our champion
+                // Get game data
                 var gameResponse = await _apiClient.GetAsync("lol-gameflow/v1/session");
                 if (!gameResponse.IsSuccessStatusCode)
+                {
+                    DebugUtil.LogDebug($"[IN-GAME] Session endpoint returned: {gameResponse.StatusCode}");
                     return;
+                }
 
                 var gameContent = await gameResponse.Content.ReadAsStringAsync();
                 var gameDoc = System.Text.Json.JsonDocument.Parse(gameContent).RootElement;
 
+                // Look for our player in gameData
                 if (gameDoc.TryGetProperty("gameData", out var gameDataElem) &&
-                    gameDataElem.TryGetProperty("playerChampionSelections", out var selectionsElem))
+                    gameDataElem.TryGetProperty("allPlayers", out var playersElem))
                 {
-                    foreach (var selection in selectionsElem.EnumerateArray())
+                    foreach (var player in playersElem.EnumerateArray())
                     {
-                        if (selection.TryGetProperty("summonerId", out var selSumIdElem) &&
-                            selection.TryGetProperty("championId", out var champIdElem))
+                        if (player.TryGetProperty("summonerId", out var sumIdElem) &&
+                            sumIdElem.GetString() == summonerId &&
+                            player.TryGetProperty("championId", out var champIdElem))
                         {
-                            if (selSumIdElem.GetString() == summonerId)
+                            int champId = champIdElem.GetInt32();
+                            var champName = _championData.GetChampionName(champId);
+                            if (!string.IsNullOrEmpty(champName))
                             {
-                                int champId = champIdElem.GetInt32();
-                                var champName = _championData.GetChampionName(champId);
-                                if (!string.IsNullOrEmpty(champName))
-                                {
-                                    ChampionStatus.Text = $"In Game - {champName}";
-                                    DebugUtil.LogDebug($"[IN-GAME] Current champion: {champName}");
-                                }
-                                return;
+                                ChampionStatus.Text = $"In Game - {champName}";
+                                DebugUtil.LogDebug($"[IN-GAME] Current champion: {champName}");
                             }
+                            return;
                         }
                     }
                 }
+                
+                DebugUtil.LogDebug("[IN-GAME] Could not find player in allPlayers");
             }
             catch (Exception ex)
             {

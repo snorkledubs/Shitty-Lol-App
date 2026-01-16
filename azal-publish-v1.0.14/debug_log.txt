@@ -25,3 +25,157 @@
 [2026-01-15 20:05:12.218] [GAMEFLOW] Phase: InProgress
 [2026-01-15 20:05:13.276] [STATUS] Checking connection: Port=57377, Password=924
 [2026-01-15 20:05:13.277] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:15.236] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:05:15.284] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:15.284] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:17.223] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:05:17.285] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:17.285] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:19.298] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:19.298] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:20.239] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:05:21.302] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:21.302] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:22.224] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:05:23.298] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:23.299] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:25.245] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:05:25.307] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:25.307] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:27.238] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:05:27.321] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:27.322] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:29.346] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:29.347] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:30.250] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:05:31.339] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:31.340] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:32.229] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:05:33.349] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:33.349] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:35.265] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:05:35.344] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:35.344] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:37.231] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:05:37.340] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:37.340] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:39.338] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:39.338] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:40.268] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:05:41.353] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:41.353] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:42.243] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:05:43.362] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:43.362] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:45.275] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:05:45.353] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:45.354] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:47.245] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:05:47.352] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:47.352] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:49.358] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:49.358] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:50.277] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:05:51.354] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:51.354] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:52.243] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:05:53.363] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:53.364] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:55.287] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:05:55.366] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:55.366] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:57.250] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:05:57.358] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:57.358] [STATUS] Set UI text to Connected
+[2026-01-15 20:05:59.354] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:05:59.355] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:00.290] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:06:01.365] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:01.365] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:02.255] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:06:03.375] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:03.375] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:05.300] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:06:05.380] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:05.380] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:07.257] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:06:07.368] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:07.368] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:09.380] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:09.380] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:10.301] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:06:11.395] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:11.396] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:12.254] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:06:13.406] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:13.406] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:15.312] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:06:15.406] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:15.406] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:17.251] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:06:17.404] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:17.405] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:19.401] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:19.402] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:20.318] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:06:21.413] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:21.413] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:22.254] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:06:23.421] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:23.421] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:25.326] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:06:25.419] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:25.420] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:27.255] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:06:27.425] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:27.426] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:29.415] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:29.416] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:30.334] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:06:31.424] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:31.425] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:32.252] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:06:33.421] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:33.421] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:35.346] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:06:35.424] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:35.424] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:37.256] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:06:37.425] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:37.426] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:39.414] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:39.414] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:40.350] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:06:41.426] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:41.426] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:42.251] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:06:43.419] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:43.419] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:45.359] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:06:45.422] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:45.422] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:47.248] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:06:47.419] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:47.419] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:49.429] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:49.430] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:50.363] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:06:51.435] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:51.435] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:52.244] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:06:53.456] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:53.456] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:55.377] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:06:55.456] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:55.457] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:57.249] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:06:57.460] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:57.460] [STATUS] Set UI text to Connected
+[2026-01-15 20:06:59.460] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:06:59.461] [STATUS] Set UI text to Connected
+[2026-01-15 20:07:00.382] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:07:01.472] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:07:01.472] [STATUS] Set UI text to Connected
+[2026-01-15 20:07:02.253] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:07:03.461] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:07:03.462] [STATUS] Set UI text to Connected
