@@ -83,10 +83,7 @@ namespace LoLCompanion
 
         private void ResetBuild()
         {
-            ChampionStatus.Text = "No champion selected";
-            CoreItems.Text = "";
-            OptionalItems.Text = "";
-            RunesDisplay.Text = "";
+            // Build display removed from minimal UI
         }
 
         private async Task MonitorChampionSelect()
@@ -111,9 +108,8 @@ namespace LoLCompanion
                                     if (champId > 0)
                                     {
                                         var championName = _championData.GetChampionName(champId);
-                                        if (!string.IsNullOrEmpty(championName) && ChampionStatus.Text != championName)
+                                        if (!string.IsNullOrEmpty(championName))
                                         {
-                                            ChampionStatus.Text = championName;
                                             await DoImportBuild(champId);
                                         }
                                         return;
@@ -138,14 +134,6 @@ namespace LoLCompanion
 
                 if (build != null && build.Success)
                 {
-                    var coreItems = build.ItemIds.Count > 0 ? string.Join(", ", build.ItemIds.GetRange(0, System.Math.Min(3, build.ItemIds.Count))) : "None";
-                    var optionalItems = build.ItemIds.Count > 3 ? string.Join(", ", build.ItemIds.GetRange(3, System.Math.Min(3, build.ItemIds.Count - 3))) : "None";
-                    var runes = build.RuneIds.Count > 0 ? string.Join(", ", build.RuneIds.GetRange(0, System.Math.Min(6, build.RuneIds.Count))) : "None";
-
-                    CoreItems.Text = coreItems;
-                    OptionalItems.Text = optionalItems;
-                    RunesDisplay.Text = runes;
-
                     var port = _lockfileManager.GetClientPort();
                     var password = _lockfileManager.GetClientPassword();
 
@@ -175,7 +163,6 @@ namespace LoLCompanion
                 {
                     _apiClient.UpdateLcuCredentials(port, password);
                     _isConnected = true;
-                    StatusText.Text = "League Client: Connected";
                     _gameStateTimer.Start();
                     
                     _ = MonitorChampionSelect();
