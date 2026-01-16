@@ -1,0 +1,35 @@
+# Build and publish directories
+bin/
+obj/
+azal-publish/
+azal-publish2/
+azal-publish3/
+publish/
+Output/
+setup-temp/
+
+# Large files
+*.exe
+*.zip
+*.b64
+*.pdb
+
+# Debug logs
+debug_log.txt
+
+# Visual Studio cache files
+.vs/
+*.user
+*.suo
+
+# Local files
+opgg_full.html
+opgg_sample.html
+champions_cache.json
+copy_script.bat
+
+# Temp files
+src-b64.txt
+src-only.zip
+src.zip
+azal-setup.zip
