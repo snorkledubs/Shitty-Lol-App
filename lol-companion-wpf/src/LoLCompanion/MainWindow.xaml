@@ -20,7 +20,7 @@
 
         <!-- Build Tab Content -->
         <ScrollViewer Name="BuildTabContent" Grid.Row="1" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Background="#1e1e1e">
-            <StackPanel Padding="10,10,10,10" Background="#1e1e1e">
+            <StackPanel Background="#1e1e1e" Margin="10,10,10,10">
                 <TextBlock Name="ChampionStatus" Foreground="#c41e3a" FontSize="14" Margin="0,0,0,5">No champion selected</TextBlock>
                 <TextBlock Foreground="#555555" FontSize="11" Margin="0,0,0,10">Waiting for champion select...</TextBlock>
 
@@ -40,14 +40,14 @@
 
         <!-- Bench Tab Content (Hidden by default) -->
         <ScrollViewer Name="BenchTabContent" Grid.Row="1" Visibility="Collapsed" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Background="#1e1e1e">
-            <StackPanel Padding="10,10,10,10" Background="#1e1e1e">
+            <StackPanel Background="#1e1e1e" Margin="10,10,10,10">
                 <TextBlock Text="Bench swaps go here" Foreground="#cccccc" FontSize="11"/>
             </StackPanel>
         </ScrollViewer>
 
         <!-- Settings Tab Content (Hidden by default) -->
         <ScrollViewer Name="SettingsTabContent" Grid.Row="1" Visibility="Collapsed" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Background="#1e1e1e">
-            <StackPanel Padding="10,10,10,10" Background="#1e1e1e">
+            <StackPanel Background="#1e1e1e" Margin="10,10,10,10">
                 <TextBlock Text="Auto Accept" Foreground="#c41e3a" FontSize="12" FontWeight="Bold" Margin="0,0,0,5"/>
                 <TextBlock Foreground="#555555" FontSize="10" Margin="0,0,0,10">Enabled - Auto-accepts matches automatically</TextBlock>
 
