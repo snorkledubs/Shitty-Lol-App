@@ -115,6 +115,18 @@ namespace LoLCompanion
             {
                 try
                 {
+                    // Ensure credentials are set before making API call
+                    var port = _lockfileManager.GetClientPort();
+                    var password = _lockfileManager.GetClientPassword();
+
+                    if (string.IsNullOrEmpty(port) || string.IsNullOrEmpty(password))
+                    {
+                        await Task.Delay(500);
+                        continue;
+                    }
+
+                    _apiClient.UpdateLcuCredentials(port, password);
+
                     var response = await _apiClient.GetAsync("lol-champ-select/v1/session");
                     if (response.IsSuccessStatusCode)
                     {
@@ -202,11 +214,14 @@ namespace LoLCompanion
                 var port = _lockfileManager.GetClientPort();
                 var password = _lockfileManager.GetClientPassword();
 
+                DebugUtil.LogDebug($"[STATUS] Checking connection: Port={port}, Password={'*'*password?.Length ?? 0}");
+
                 if (string.IsNullOrEmpty(port) || string.IsNullOrEmpty(password))
                 {
                     StatusText.Text = "League Client: Disconnected";
                     _isConnected = false;
                     _gameStateTimer.Stop();
+                    DebugUtil.LogDebug("[STATUS] No credentials found");
                     return;
                 }
 
@@ -215,13 +230,16 @@ namespace LoLCompanion
                     _apiClient.UpdateLcuCredentials(port, password);
                     _isConnected = true;
                     _gameStateTimer.Start();
+                    DebugUtil.LogDebug("[STATUS] Credentials set and game state timer started");
                 }
 
                 StatusText.Text = "League Client: Connected";
+                DebugUtil.LogDebug("[STATUS] Set UI text to Connected");
             }
-            catch
+            catch (Exception ex)
             {
                 StatusText.Text = "League Client: Error";
+                DebugUtil.LogDebug($"[STATUS] Error: {ex.Message}");
             }
         }
     }
