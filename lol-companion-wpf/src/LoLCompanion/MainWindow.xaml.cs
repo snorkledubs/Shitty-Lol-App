@@ -165,27 +165,55 @@ namespace LoLCompanion
             }
         }
 
-        private async void StartWatching()
+        private void StartWatching()
         {
             try
             {
-                await _lockfileManager.WatchForClientAsync();
+                // Start lockfile monitoring in background (non-blocking)
+                _ = _lockfileManager.WatchForClientAsync();
 
-                var port = _lockfileManager.GetClientPort();
-                var password = _lockfileManager.GetClientPassword();
+                // Start status update timer
+                var statusTimer = new DispatcherTimer();
+                statusTimer.Interval = TimeSpan.FromSeconds(2);
+                statusTimer.Tick += async (s, e) => await UpdateConnectionStatus();
+                statusTimer.Start();
 
-                if (!string.IsNullOrEmpty(port) && !string.IsNullOrEmpty(password))
-                {
-                    _apiClient.UpdateLcuCredentials(port, password);
-                    _isConnected = true;
-                    _gameStateTimer.Start();
-                    
-                    _ = MonitorChampionSelect();
-                }
+                // Start monitoring champion select
+                _ = MonitorChampionSelect();
             }
             catch (Exception ex)
             {
                 DebugUtil.LogDebug($"Error starting watchers: {ex.Message}");
+            }
+        }
+
+        private async Task UpdateConnectionStatus()
+        {
+            try
+            {
+                var port = _lockfileManager.GetClientPort();
+                var password = _lockfileManager.GetClientPassword();
+
+                if (string.IsNullOrEmpty(port) || string.IsNullOrEmpty(password))
+                {
+                    StatusText.Text = "League Client: Disconnected";
+                    _isConnected = false;
+                    _gameStateTimer.Stop();
+                    return;
+                }
+
+                if (!_isConnected)
+                {
+                    _apiClient.UpdateLcuCredentials(port, password);
+                    _isConnected = true;
+                    _gameStateTimer.Start();
+                }
+
+                StatusText.Text = "League Client: Connected";
+            }
+            catch
+            {
+                StatusText.Text = "League Client: Error";
             }
         }
     }
