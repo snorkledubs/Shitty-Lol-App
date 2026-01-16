@@ -1,0 +1,78 @@
+[2026-01-15 20:10:09.902] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:09.917] [LCU] Credentials updated. Port: 57377
+[2026-01-15 20:10:11.922] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:11.924] [STATUS] Credentials set and game state timer started
+[2026-01-15 20:10:11.924] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:13.936] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:13.936] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:14.918] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:15.959] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:15.959] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:16.928] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:10:16.932] [IN-GAME] Error fetching champion: The given key was not present in the dictionary.
+[2026-01-15 20:10:17.952] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:17.953] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:19.932] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:19.962] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:19.963] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:21.918] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:10:21.919] [IN-GAME] Error fetching champion: The given key was not present in the dictionary.
+[2026-01-15 20:10:21.964] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:21.965] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:23.965] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:23.965] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:24.944] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:25.970] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:25.971] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:26.923] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:10:26.925] [IN-GAME] Error fetching champion: The given key was not present in the dictionary.
+[2026-01-15 20:10:27.980] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:27.981] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:29.957] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:30.002] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:30.003] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:31.930] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:10:31.931] [IN-GAME] Error fetching champion: The given key was not present in the dictionary.
+[2026-01-15 20:10:31.992] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:31.992] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:34.000] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:34.000] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:34.967] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:35.998] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:35.998] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:36.954] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:10:36.955] [IN-GAME] Error fetching champion: The given key was not present in the dictionary.
+[2026-01-15 20:10:37.994] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:37.995] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:39.983] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:39.998] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:39.998] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:41.952] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:10:41.953] [IN-GAME] Error fetching champion: The given key was not present in the dictionary.
+[2026-01-15 20:10:41.998] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:41.998] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:44.007] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:44.008] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:44.989] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:46.013] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:46.013] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:46.979] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:10:46.980] [IN-GAME] Error fetching champion: The given key was not present in the dictionary.
+[2026-01-15 20:10:48.007] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:48.007] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:49.998] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:50.013] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:50.013] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:51.983] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:10:51.984] [IN-GAME] Error fetching champion: The given key was not present in the dictionary.
+[2026-01-15 20:10:52.012] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:52.013] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:54.034] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:54.035] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:55.007] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:56.052] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:56.052] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:57.002] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:10:57.003] [IN-GAME] Error fetching champion: The given key was not present in the dictionary.
+[2026-01-15 20:10:58.045] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:58.045] [STATUS] Set UI text to Connected

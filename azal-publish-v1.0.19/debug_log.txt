@@ -1,0 +1,51 @@
+[2026-01-15 20:10:58.683] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:58.698] [LCU] Credentials updated. Port: 57377
+[2026-01-15 20:11:00.704] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:11:00.705] [STATUS] Credentials set and game state timer started
+[2026-01-15 20:11:00.705] [STATUS] Set UI text to Connected
+[2026-01-15 20:11:02.698] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:11:02.699] [STATUS] Set UI text to Connected
+[2026-01-15 20:11:03.695] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:11:04.695] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:11:04.696] [STATUS] Set UI text to Connected
+[2026-01-15 20:11:05.711] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:11:05.739] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4
+[2026-01-15 20:11:05.746] [IN-GAME] Exception: InvalidOperationException - The requested operation requires an element of type 'String', but the target element has type 'Number'.
+[2026-01-15 20:11:06.719] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:11:06.720] [STATUS] Set UI text to Connected
+[2026-01-15 20:11:08.698] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:11:08.714] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:11:08.715] [STATUS] Set UI text to Connected
+[2026-01-15 20:11:10.696] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:11:10.697] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4
+[2026-01-15 20:11:10.697] [IN-GAME] Exception: InvalidOperationException - The requested operation requires an element of type 'String', but the target element has type 'Number'.
+[2026-01-15 20:11:10.710] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:11:10.710] [STATUS] Set UI text to Connected
+[2026-01-15 20:11:12.725] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:11:12.726] [STATUS] Set UI text to Connected
+[2026-01-15 20:11:13.707] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:11:14.736] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:11:14.736] [STATUS] Set UI text to Connected
+[2026-01-15 20:11:15.724] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:11:15.725] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4
+[2026-01-15 20:11:15.726] [IN-GAME] Exception: InvalidOperationException - The requested operation requires an element of type 'String', but the target element has type 'Number'.
+[2026-01-15 20:11:16.750] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:11:16.751] [STATUS] Set UI text to Connected
+[2026-01-15 20:11:18.710] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:11:18.756] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:11:18.756] [STATUS] Set UI text to Connected
+[2026-01-15 20:11:20.727] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:11:20.728] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4
+[2026-01-15 20:11:20.728] [IN-GAME] Exception: InvalidOperationException - The requested operation requires an element of type 'String', but the target element has type 'Number'.
+[2026-01-15 20:11:20.756] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:11:20.756] [STATUS] Set UI text to Connected
+[2026-01-15 20:11:22.756] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:11:22.757] [STATUS] Set UI text to Connected
+[2026-01-15 20:11:23.711] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:11:24.761] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:11:24.762] [STATUS] Set UI text to Connected
+[2026-01-15 20:11:25.755] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:11:25.757] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4
+[2026-01-15 20:11:25.758] [IN-GAME] Exception: InvalidOperationException - The requested operation requires an element of type 'String', but the target element has type 'Number'.
+[2026-01-15 20:11:26.757] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:11:26.758] [STATUS] Set UI text to Connected

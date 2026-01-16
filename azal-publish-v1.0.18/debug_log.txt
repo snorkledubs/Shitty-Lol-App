@@ -1,0 +1,37 @@
+[2026-01-15 20:10:36.198] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:36.213] [LCU] Credentials updated. Port: 57377
+[2026-01-15 20:10:38.196] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:38.196] [STATUS] Credentials set and game state timer started
+[2026-01-15 20:10:38.197] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:40.202] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:40.202] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:41.220] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:42.200] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:42.200] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:43.216] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:10:43.220] [IN-GAME] No 'id' field in summoner response
+[2026-01-15 20:10:44.225] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:44.225] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:46.231] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:46.232] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:46.232] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:48.224] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:10:48.226] [IN-GAME] No 'id' field in summoner response
+[2026-01-15 20:10:48.226] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:48.226] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:50.232] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:50.232] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:51.246] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:52.265] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:52.265] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:53.227] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:10:53.228] [IN-GAME] No 'id' field in summoner response
+[2026-01-15 20:10:54.285] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:54.286] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:56.255] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:10:56.301] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:56.302] [STATUS] Set UI text to Connected
+[2026-01-15 20:10:58.249] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:10:58.250] [IN-GAME] No 'id' field in summoner response
+[2026-01-15 20:10:58.295] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:10:58.295] [STATUS] Set UI text to Connected
