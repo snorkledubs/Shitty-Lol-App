@@ -1,0 +1,10 @@
+<Window x:Class="LoLCompanion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="LoL Companion" Height="600" Width="400">
+    <DockPanel>
+        <Button DockPanel.Dock="Bottom" Name="AutoClickToggle" Click="AutoClickToggle_Click" Height="40">Auto-Click: OFF</Button>
+        <TextBlock DockPanel.Dock="Top" Name="BuildDisplay" Height="100" Text="Ready to import builds..." TextWrapping="Wrap" Padding="10"/>
+        <WrapPanel x:Name="ChampionPanel" Orientation="Horizontal" />
+    </DockPanel>
+</Window>
