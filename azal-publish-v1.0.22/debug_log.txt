@@ -1,0 +1,46 @@
+[2026-01-15 20:14:10.153] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:14:10.167] [LCU] Credentials updated. Port: 57377
+[2026-01-15 20:14:12.165] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:12.165] [STATUS] Credentials set and game state timer started
+[2026-01-15 20:14:12.166] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:14.173] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:14.173] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:15.172] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:14:16.165] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:16.166] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:17.187] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:14:17.191] [IN-GAME] Champion detected: Riven
+[2026-01-15 20:14:18.172] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:18.172] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:20.169] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:20.169] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:20.173] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:14:22.184] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:22.185] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:22.201] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:14:22.204] [IN-GAME] Champion detected: Riven
+[2026-01-15 20:14:24.193] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:24.193] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:25.178] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:14:26.208] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:26.208] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:27.191] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:14:27.193] [IN-GAME] Champion detected: Riven
+[2026-01-15 20:14:28.201] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:28.201] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:30.179] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:14:30.209] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:30.209] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:32.191] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:14:32.193] [IN-GAME] Champion detected: Riven
+[2026-01-15 20:14:32.206] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:32.206] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:34.205] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:34.205] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:35.186] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:14:36.219] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:36.220] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:37.194] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:14:37.196] [IN-GAME] Champion detected: Riven
+[2026-01-15 20:14:38.219] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:38.219] [STATUS] Set UI text to Connected

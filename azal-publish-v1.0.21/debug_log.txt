@@ -91,3 +91,110 @@
 [2026-01-15 20:13:17.688] [LOCKFILE] Found client: Port=57377
 [2026-01-15 20:13:17.689] [STATUS] Checking connection: Port=57377, Password=924
 [2026-01-15 20:13:17.689] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:19.677] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:13:19.678] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4da4c570-0089-5eac-894b-aa31cd07363b","rerollPoints":{"currentPoints":0,"maxRolls":2,"numberOfRolls":
+[2026-01-15 20:13:19.678] [IN-GAME] Our summoner ID: 113231038
+[2026-01-15 20:13:19.680] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:19.680] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:19.681] [IN-GAME] Found gameData element
+[2026-01-15 20:13:19.681] [IN-GAME] Found playerChampionSelections, searching for account 113231038
+[2026-01-15 20:13:19.681] [IN-GAME] Could not find matching summoner in playerChampionSelections
+[2026-01-15 20:13:21.686] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:21.686] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:22.691] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:13:23.685] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:23.685] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:24.685] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:13:24.685] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4da4c570-0089-5eac-894b-aa31cd07363b","rerollPoints":{"currentPoints":0,"maxRolls":2,"numberOfRolls":
+[2026-01-15 20:13:24.685] [IN-GAME] Our summoner ID: 113231038
+[2026-01-15 20:13:24.688] [IN-GAME] Found gameData element
+[2026-01-15 20:13:24.688] [IN-GAME] Found playerChampionSelections, searching for account 113231038
+[2026-01-15 20:13:24.688] [IN-GAME] Could not find matching summoner in playerChampionSelections
+[2026-01-15 20:13:25.683] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:25.683] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:27.693] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:13:27.694] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:27.694] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:29.688] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:13:29.689] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4da4c570-0089-5eac-894b-aa31cd07363b","rerollPoints":{"currentPoints":0,"maxRolls":2,"numberOfRolls":
+[2026-01-15 20:13:29.689] [IN-GAME] Our summoner ID: 113231038
+[2026-01-15 20:13:29.691] [IN-GAME] Found gameData element
+[2026-01-15 20:13:29.691] [IN-GAME] Found playerChampionSelections, searching for account 113231038
+[2026-01-15 20:13:29.691] [IN-GAME] Could not find matching summoner in playerChampionSelections
+[2026-01-15 20:13:29.704] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:29.704] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:31.698] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:31.698] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:32.696] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:13:33.711] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:33.711] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:34.679] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:13:34.680] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4da4c570-0089-5eac-894b-aa31cd07363b","rerollPoints":{"currentPoints":0,"maxRolls":2,"numberOfRolls":
+[2026-01-15 20:13:34.680] [IN-GAME] Our summoner ID: 113231038
+[2026-01-15 20:13:34.682] [IN-GAME] Found gameData element
+[2026-01-15 20:13:34.682] [IN-GAME] Found playerChampionSelections, searching for account 113231038
+[2026-01-15 20:13:34.682] [IN-GAME] Could not find matching summoner in playerChampionSelections
+[2026-01-15 20:13:35.719] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:35.720] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:37.699] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:13:37.715] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:37.715] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:39.699] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:13:39.700] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4da4c570-0089-5eac-894b-aa31cd07363b","rerollPoints":{"currentPoints":0,"maxRolls":2,"numberOfRolls":
+[2026-01-15 20:13:39.701] [IN-GAME] Our summoner ID: 113231038
+[2026-01-15 20:13:39.703] [IN-GAME] Found gameData element
+[2026-01-15 20:13:39.703] [IN-GAME] Found playerChampionSelections, searching for account 113231038
+[2026-01-15 20:13:39.703] [IN-GAME] Could not find matching summoner in playerChampionSelections
+[2026-01-15 20:13:39.714] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:39.715] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:41.711] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:41.711] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:42.708] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:13:43.722] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:43.722] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:44.689] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:13:44.690] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4da4c570-0089-5eac-894b-aa31cd07363b","rerollPoints":{"currentPoints":0,"maxRolls":2,"numberOfRolls":
+[2026-01-15 20:13:44.690] [IN-GAME] Our summoner ID: 113231038
+[2026-01-15 20:13:44.691] [IN-GAME] Found gameData element
+[2026-01-15 20:13:44.692] [IN-GAME] Found playerChampionSelections, searching for account 113231038
+[2026-01-15 20:13:44.692] [IN-GAME] Could not find matching summoner in playerChampionSelections
+[2026-01-15 20:13:45.731] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:45.731] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:47.718] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:13:47.733] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:47.733] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:49.696] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:13:49.696] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4da4c570-0089-5eac-894b-aa31cd07363b","rerollPoints":{"currentPoints":0,"maxRolls":2,"numberOfRolls":
+[2026-01-15 20:13:49.697] [IN-GAME] Our summoner ID: 113231038
+[2026-01-15 20:13:49.698] [IN-GAME] Found gameData element
+[2026-01-15 20:13:49.698] [IN-GAME] Found playerChampionSelections, searching for account 113231038
+[2026-01-15 20:13:49.699] [IN-GAME] Could not find matching summoner in playerChampionSelections
+[2026-01-15 20:13:49.741] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:49.741] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:51.740] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:51.740] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:52.728] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:13:53.730] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:53.730] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:54.700] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:13:54.700] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4da4c570-0089-5eac-894b-aa31cd07363b","rerollPoints":{"currentPoints":0,"maxRolls":2,"numberOfRolls":
+[2026-01-15 20:13:54.701] [IN-GAME] Our summoner ID: 113231038
+[2026-01-15 20:13:54.703] [IN-GAME] Found gameData element
+[2026-01-15 20:13:54.703] [IN-GAME] Found playerChampionSelections, searching for account 113231038
+[2026-01-15 20:13:54.703] [IN-GAME] Could not find matching summoner in playerChampionSelections
+[2026-01-15 20:13:55.733] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:55.733] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:57.737] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:13:57.737] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:57.737] [STATUS] Set UI text to Connected
+[2026-01-15 20:13:59.702] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:13:59.703] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4da4c570-0089-5eac-894b-aa31cd07363b","rerollPoints":{"currentPoints":0,"maxRolls":2,"numberOfRolls":
+[2026-01-15 20:13:59.703] [IN-GAME] Our summoner ID: 113231038
+[2026-01-15 20:13:59.706] [IN-GAME] Found gameData element
+[2026-01-15 20:13:59.706] [IN-GAME] Found playerChampionSelections, searching for account 113231038
+[2026-01-15 20:13:59.706] [IN-GAME] Could not find matching summoner in playerChampionSelections
+[2026-01-15 20:13:59.749] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:13:59.749] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:01.756] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:14:01.756] [STATUS] Set UI text to Connected
+[2026-01-15 20:14:02.749] [LOCKFILE] Found client: Port=57377

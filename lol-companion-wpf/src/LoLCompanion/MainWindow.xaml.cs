@@ -232,10 +232,29 @@ namespace LoLCompanion
             try
             {
                 var championName = _championData.GetChampionName(championId);
+                DebugUtil.LogDebug($"[BUILD] Fetching build for {championName} (ID: {championId})");
+                
+                // Update UI to show we're loading
+                ChampionStatus.Text = $"Loading {championName}...";
+
                 var build = await _apiClient.GetChampionBuildAsync(championName);
 
                 if (build != null && build.Success)
                 {
+                    DebugUtil.LogDebug($"[BUILD] Got build for {championName}");
+                    
+                    // Update UI with champion name
+                    ChampionStatus.Text = $"{championName} - Build Loaded";
+                    
+                    // Display items
+                    if (build.Items != null && build.Items.Count > 0)
+                    {
+                        var itemNames = string.Join(", ", build.Items.Select(id => GameData.ItemNames.ContainsKey(id) ? GameData.ItemNames[id] : $"Item {id}"));
+                        CoreItems.Text = itemNames;
+                        DebugUtil.LogDebug($"[BUILD] Core items: {itemNames}");
+                    }
+
+                    // Try to import to client
                     var port = _lockfileManager.GetClientPort();
                     var password = _lockfileManager.GetClientPassword();
 
@@ -243,7 +262,13 @@ namespace LoLCompanion
                     {
                         _apiClient.UpdateLcuCredentials(port, password);
                         await _apiClient.ImportBuildToClientAsync(build, championId, championName);
+                        DebugUtil.LogDebug($"[BUILD] Build import triggered for {championName}");
                     }
+                }
+                else
+                {
+                    DebugUtil.LogDebug($"[BUILD] No build found for {championName}");
+                    ChampionStatus.Text = $"{championName} - No build found";
                 }
             }
             catch (Exception ex)
