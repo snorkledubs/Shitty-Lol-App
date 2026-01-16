@@ -181,3 +181,83 @@
 [2026-01-15 19:57:29.560] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
 [2026-01-15 19:57:30.060] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
 [2026-01-15 19:57:30.575] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:31.091] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:31.601] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:32.103] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:32.615] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:33.051] [LOCKFILE] Error reading lockfile: The process cannot access the file 'C:\Riot Games\League of Legends\lockfile' because it is being used by another process.
+[2026-01-15 19:57:33.130] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:33.644] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:34.157] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:34.658] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:35.171] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:35.672] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:36.177] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:36.679] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:37.191] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:37.693] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:38.051] [LOCKFILE] Error reading lockfile: The process cannot access the file 'C:\Riot Games\League of Legends\lockfile' because it is being used by another process.
+[2026-01-15 19:57:38.207] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:38.723] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:39.236] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:39.738] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:40.250] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:40.750] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:41.264] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:41.766] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:42.266] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:42.767] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:43.063] [LOCKFILE] Error reading lockfile: The process cannot access the file 'C:\Riot Games\League of Legends\lockfile' because it is being used by another process.
+[2026-01-15 19:57:43.269] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:43.770] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:44.271] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:44.784] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:45.288] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:45.789] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:46.304] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:46.820] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:47.320] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:47.833] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:48.067] [LOCKFILE] Error reading lockfile: The process cannot access the file 'C:\Riot Games\League of Legends\lockfile' because it is being used by another process.
+[2026-01-15 19:57:48.334] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:48.850] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:49.351] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:49.864] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:50.379] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:50.895] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:51.410] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:51.923] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:52.432] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:52.935] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:53.077] [LOCKFILE] Error reading lockfile: The process cannot access the file 'C:\Riot Games\League of Legends\lockfile' because it is being used by another process.
+[2026-01-15 19:57:53.438] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:53.940] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:54.442] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:54.954] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:55.469] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:55.970] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:56.482] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:56.985] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:57.500] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:58.015] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:58.092] [LOCKFILE] Error reading lockfile: The process cannot access the file 'C:\Riot Games\League of Legends\lockfile' because it is being used by another process.
+[2026-01-15 19:57:58.528] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:59.029] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:57:59.529] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:00.029] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:00.530] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:01.044] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:01.557] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:02.059] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:02.563] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:03.074] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:03.105] [LOCKFILE] Error reading lockfile: The process cannot access the file 'C:\Riot Games\League of Legends\lockfile' because it is being used by another process.
+[2026-01-15 19:58:03.588] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:04.103] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:04.618] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:05.133] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:05.648] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:06.149] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:06.662] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:07.162] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+[2026-01-15 19:58:07.676] [API] GetAsync error: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
