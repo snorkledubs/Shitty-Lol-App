@@ -1,21 +1,23 @@
 # Build and publish directories
-bin/
-obj/
+lol-companion-wpf/src/LoLCompanion/bin/
+lol-companion-wpf/src/LoLCompanion/obj/
+lol-companion-wpf/src/LoLCompanion/publish/
 azal-publish/
 azal-publish2/
 azal-publish3/
-publish/
 Output/
 setup-temp/
 
-# Large files
+# Large files (except allow source code)
 *.exe
 *.zip
 *.b64
-*.pdb
+!lol-companion-wpf/**
+lol-companion-wpf/src/LoLCompanion/bin/**/*.exe
+lol-companion-wpf/src/LoLCompanion/obj/**/*.exe
 
 # Debug logs
-debug_log.txt
+azal-publish/debug_log.txt
 
 # Visual Studio cache files
 .vs/
