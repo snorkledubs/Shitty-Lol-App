@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("azal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3128aa7567d652ea2ee1e5363ed109bb1f5d0ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62859b59a16e626d8bbf82964ccdee79ece3b179")]
 [assembly: System.Reflection.AssemblyProductAttribute("azal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("azal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

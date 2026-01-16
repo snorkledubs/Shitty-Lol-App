@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="LoL Companion" Height="600" Width="350"
         Background="#1e1e1e" Foreground="#ffffff"
-        WindowStyle="None" AllowsTransparency="False">
+        WindowStyle="None" AllowsTransparency="False" ResizeMode="NoResize"
+        Margin="0" Padding="0">
     <Grid Background="#1e1e1e">
         <Grid.RowDefinitions>
             <RowDefinition Height="35"/>
@@ -11,12 +12,14 @@
         </Grid.RowDefinitions>
 
         <!-- Tab Buttons Header -->
-        <DockPanel Grid.Row="0" Background="#2d2d2d" MouseLeftButtonDown="Header_MouseDown">
-            <Button Name="BuildTab" Click="BuildTab_Click" Background="#2d2d2d" Foreground="#ffffff" BorderThickness="0" Padding="15,8" HorizontalAlignment="Left">Build</Button>
-            <Button Name="BenchTab" Click="BenchTab_Click" Background="#2d2d2d" Foreground="#ffffff" BorderThickness="0" Padding="15,8" HorizontalAlignment="Left">Bench</Button>
-            <Button Name="SettingsTab" Click="SettingsTab_Click" Background="#2d2d2d" Foreground="#ffffff" BorderThickness="0" Padding="15,8" HorizontalAlignment="Left">Settings</Button>
+        <Grid Grid.Row="0" Background="#2d2d2d" MouseLeftButtonDown="Header_MouseDown">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Name="BuildTab" Click="BuildTab_Click" Background="#2d2d2d" Foreground="#ffffff" BorderThickness="0" Padding="15,8">Build</Button>
+                <Button Name="BenchTab" Click="BenchTab_Click" Background="#2d2d2d" Foreground="#ffffff" BorderThickness="0" Padding="15,8">Bench</Button>
+                <Button Name="SettingsTab" Click="SettingsTab_Click" Background="#2d2d2d" Foreground="#ffffff" BorderThickness="0" Padding="15,8">Settings</Button>
+            </StackPanel>
             <Button Click="CloseWindow" Background="#c41e3a" Foreground="#ffffff" BorderThickness="0" HorizontalAlignment="Right" Width="35">X</Button>
-        </DockPanel>
+        </Grid>
 
         <!-- Build Tab Content -->
         <ScrollViewer Name="BuildTabContent" Grid.Row="1" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Background="#1e1e1e">

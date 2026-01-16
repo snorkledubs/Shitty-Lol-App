@@ -74,9 +74,15 @@ namespace LoLCompanion
 
         private void Header_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            if (e.LeftButton == System.Windows.Input.MouseButtonState.Pressed)
+            // Check if we clicked on a button
+            var button = e.OriginalSource as System.Windows.Controls.Button;
+            if (button == null)
             {
-                this.DragMove();
+                // We didn't click on a button, so allow dragging
+                if (e.LeftButton == System.Windows.Input.MouseButtonState.Pressed)
+                {
+                    this.DragMove();
+                }
             }
         }
 
