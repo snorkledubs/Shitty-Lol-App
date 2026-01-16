@@ -76,6 +76,14 @@ namespace LoLCompanion
         {
             try
             {
+                var port = _lockfileManager.GetClientPort();
+                var password = _lockfileManager.GetClientPassword();
+
+                if (string.IsNullOrEmpty(port) || string.IsNullOrEmpty(password))
+                    return;
+
+                _apiClient.UpdateLcuCredentials(port, password);
+
                 var response = await _apiClient.GetAsync("lol-gameflow/v1/gameflow-phase");
                 if (response.IsSuccessStatusCode)
                 {
