@@ -39,17 +39,32 @@ namespace LoLCompanion
 
         private async void BuildTab_Click(object sender, RoutedEventArgs e)
         {
-            // Just for future use if you want to expand the UI
+            BuildTabContent.Visibility = Visibility.Visible;
+            BenchTabContent.Visibility = Visibility.Collapsed;
+            SettingsTabContent.Visibility = Visibility.Collapsed;
+            BuildTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#c41e3a"));
+            BenchTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#2d2d2d"));
+            SettingsTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#2d2d2d"));
         }
 
         private async void BenchTab_Click(object sender, RoutedEventArgs e)
         {
-            // Just for future use if you want to expand the UI
+            BuildTabContent.Visibility = Visibility.Collapsed;
+            BenchTabContent.Visibility = Visibility.Visible;
+            SettingsTabContent.Visibility = Visibility.Collapsed;
+            BuildTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#2d2d2d"));
+            BenchTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#c41e3a"));
+            SettingsTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#2d2d2d"));
         }
 
         private async void SettingsTab_Click(object sender, RoutedEventArgs e)
         {
-            // Just for future use if you want to expand the UI
+            BuildTabContent.Visibility = Visibility.Collapsed;
+            BenchTabContent.Visibility = Visibility.Collapsed;
+            SettingsTabContent.Visibility = Visibility.Visible;
+            BuildTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#2d2d2d"));
+            BenchTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#2d2d2d"));
+            SettingsTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#c41e3a"));
         }
 
         private void CloseWindow(object sender, RoutedEventArgs e)
