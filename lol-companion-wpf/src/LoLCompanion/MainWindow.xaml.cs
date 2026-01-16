@@ -128,54 +128,6 @@ namespace LoLCompanion
         {
             try
             {
-                // Get current summoner info
-                var summonerResponse = await _apiClient.GetAsync("lol-summoner/v1/current-summoner");
-                if (!summonerResponse.IsSuccessStatusCode)
-                {
-                    DebugUtil.LogDebug($"[IN-GAME] Summoner endpoint failed: {summonerResponse.StatusCode}");
-                    return;
-                }
-
-                var summonerContent = await summonerResponse.Content.ReadAsStringAsync();
-                DebugUtil.LogDebug($"[IN-GAME] Summoner response: {summonerContent.Substring(0, Math.Min(300, summonerContent.Length))}");
-                var summonerDoc = System.Text.Json.JsonDocument.Parse(summonerContent).RootElement;
-
-                // Try different possible field names - summonerId might be numeric
-                string summonerId = null;
-                if (summonerDoc.TryGetProperty("summonerId", out var sumIdElem2))
-                {
-                    summonerId = sumIdElem2.GetInt64().ToString();
-                }
-                else if (summonerDoc.TryGetProperty("id", out var idElem))
-                {
-                    if (idElem.ValueKind == System.Text.Json.JsonValueKind.Number)
-                        summonerId = idElem.GetInt64().ToString();
-                    else
-                        summonerId = idElem.GetString();
-                }
-                else if (summonerDoc.TryGetProperty("accountId", out var accountIdElem))
-                {
-                    summonerId = accountIdElem.GetInt64().ToString();
-                }
-                else if (summonerDoc.TryGetProperty("puuid", out var puuidElem))
-                {
-                    summonerId = puuidElem.GetString();
-                }
-
-                if (string.IsNullOrEmpty(summonerId))
-                {
-                    DebugUtil.LogDebug("[IN-GAME] Could not find summoner ID field");
-                    var keyList = new System.Collections.Generic.List<string>();
-                    foreach (var prop in summonerDoc.EnumerateObject())
-                    {
-                        keyList.Add(prop.Name);
-                    }
-                    DebugUtil.LogDebug($"[IN-GAME] Available summoner keys: {string.Join(", ", keyList)}");
-                    return;
-                }
-                
-                DebugUtil.LogDebug($"[IN-GAME] Our summoner ID: {summonerId}");
-
                 // Get game data
                 var gameResponse = await _apiClient.GetAsync("lol-gameflow/v1/session");
                 if (!gameResponse.IsSuccessStatusCode)
@@ -187,48 +139,35 @@ namespace LoLCompanion
                 var gameContent = await gameResponse.Content.ReadAsStringAsync();
                 var gameDoc = System.Text.Json.JsonDocument.Parse(gameContent).RootElement;
 
-                // Try allPlayers
-                if (!gameDoc.TryGetProperty("gameData", out var gameDataElem))
+                // Try getting from playerChampionSelections
+                if (gameDoc.TryGetProperty("gameData", out var gameDataElem) &&
+                    gameDataElem.TryGetProperty("playerChampionSelections", out var selectionsElem))
                 {
-                    DebugUtil.LogDebug("[IN-GAME] No gameData in session response");
-                    return;
-                }
-
-                DebugUtil.LogDebug($"[IN-GAME] Found gameData element");
-
-                if (!gameDataElem.TryGetProperty("playerChampionSelections", out var selectionsElem))
-                {
-                    DebugUtil.LogDebug("[IN-GAME] playerChampionSelections not found in gameData");
-                    return;
-                }
-
-                DebugUtil.LogDebug($"[IN-GAME] Found playerChampionSelections, searching for account {summonerId}");
-                
-                foreach (var selection in selectionsElem.EnumerateArray())
-                {
-                    if (selection.TryGetProperty("summonerId", out var sumIdElem3))
+                    // Just get the first champion selection with a valid championId
+                    foreach (var selection in selectionsElem.EnumerateArray())
                     {
-                        var currentSumId = sumIdElem3.GetInt64().ToString();
-                        DebugUtil.LogDebug($"[IN-GAME] Checking summoner: {currentSumId} vs {summonerId}");
-                        
-                        if (currentSumId == summonerId && selection.TryGetProperty("championId", out var champIdElem))
+                        if (selection.TryGetProperty("championId", out var champIdElem))
                         {
                             int champId = champIdElem.GetInt32();
-                            var champName = _championData.GetChampionName(champId);
-                            if (!string.IsNullOrEmpty(champName))
+                            if (champId > 0)
                             {
-                                ChampionStatus.Text = $"In Game - {champName}";
-                                DebugUtil.LogDebug($"[IN-GAME] Current champion: {champName}");
+                                var champName = _championData.GetChampionName(champId);
+                                if (!string.IsNullOrEmpty(champName))
+                                {
+                                    ChampionStatus.Text = $"In Game - {champName}";
+                                    DebugUtil.LogDebug($"[IN-GAME] Champion detected: {champName}");
+                                    return;
+                                }
                             }
-                            return;
                         }
                     }
                 }
-                DebugUtil.LogDebug("[IN-GAME] Could not find matching summoner in playerChampionSelections");
+
+                DebugUtil.LogDebug("[IN-GAME] Could not detect champion");
             }
             catch (Exception ex)
             {
-                DebugUtil.LogDebug($"[IN-GAME] Exception: {ex.GetType().Name} - {ex.Message}");
+                DebugUtil.LogDebug($"[IN-GAME] Error: {ex.Message}");
             }
         }
 

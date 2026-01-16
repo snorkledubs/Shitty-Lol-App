@@ -53,3 +53,51 @@
 [2026-01-15 20:12:09.357] [STATUS] Set UI text to Connected
 [2026-01-15 20:12:11.367] [STATUS] Checking connection: Port=57377, Password=924
 [2026-01-15 20:12:11.367] [STATUS] Set UI text to Connected
+[2026-01-15 20:12:12.310] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:12:13.382] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:12:13.383] [STATUS] Set UI text to Connected
+[2026-01-15 20:12:14.304] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:12:14.306] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4da4c570-0089-5eac-894b-aa31cd07363b","rerollPoints":{"currentPoints":0,"maxRolls":2,"numberOfRolls":
+[2026-01-15 20:12:14.306] [IN-GAME] Our summoner ID: 113231038
+[2026-01-15 20:12:14.309] [IN-GAME] Found gameData element
+[2026-01-15 20:12:14.310] [IN-GAME] allPlayers not found in gameData
+[2026-01-15 20:12:14.310] [IN-GAME] Available gameData keys: gameId, gameName, isCustomGame, password, playerChampionSelections, queue, spectatorKey, spectatorsAllowed, teamOne, teamTwo
+[2026-01-15 20:12:15.395] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:12:15.396] [STATUS] Set UI text to Connected
+[2026-01-15 20:12:17.322] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:12:17.384] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:12:17.385] [STATUS] Set UI text to Connected
+[2026-01-15 20:12:19.303] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:12:19.303] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4da4c570-0089-5eac-894b-aa31cd07363b","rerollPoints":{"currentPoints":0,"maxRolls":2,"numberOfRolls":
+[2026-01-15 20:12:19.304] [IN-GAME] Our summoner ID: 113231038
+[2026-01-15 20:12:19.305] [IN-GAME] Found gameData element
+[2026-01-15 20:12:19.306] [IN-GAME] allPlayers not found in gameData
+[2026-01-15 20:12:19.306] [IN-GAME] Available gameData keys: gameId, gameName, isCustomGame, password, playerChampionSelections, queue, spectatorKey, spectatorsAllowed, teamOne, teamTwo
+[2026-01-15 20:12:19.396] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:12:19.396] [STATUS] Set UI text to Connected
+[2026-01-15 20:12:21.405] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:12:21.406] [STATUS] Set UI text to Connected
+[2026-01-15 20:12:22.327] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:12:23.416] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:12:23.416] [STATUS] Set UI text to Connected
+[2026-01-15 20:12:24.292] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:12:24.293] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4da4c570-0089-5eac-894b-aa31cd07363b","rerollPoints":{"currentPoints":0,"maxRolls":2,"numberOfRolls":
+[2026-01-15 20:12:24.293] [IN-GAME] Our summoner ID: 113231038
+[2026-01-15 20:12:24.295] [IN-GAME] Found gameData element
+[2026-01-15 20:12:24.296] [IN-GAME] allPlayers not found in gameData
+[2026-01-15 20:12:24.296] [IN-GAME] Available gameData keys: gameId, gameName, isCustomGame, password, playerChampionSelections, queue, spectatorKey, spectatorsAllowed, teamOne, teamTwo
+[2026-01-15 20:12:25.416] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:12:25.416] [STATUS] Set UI text to Connected
+[2026-01-15 20:12:27.336] [LOCKFILE] Found client: Port=57377
+[2026-01-15 20:12:27.414] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:12:27.414] [STATUS] Set UI text to Connected
+[2026-01-15 20:12:29.300] [GAMEFLOW] Phase: InProgress
+[2026-01-15 20:12:29.301] [IN-GAME] Summoner response: {"accountId":2346252637285216,"displayName":"","gameName":"Job Application","internalName":"","nameChangeFlag":false,"percentCompleteForNextLevel":56,"privacy":"PUBLIC","profileIconId":5418,"puuid":"4da4c570-0089-5eac-894b-aa31cd07363b","rerollPoints":{"currentPoints":0,"maxRolls":2,"numberOfRolls":
+[2026-01-15 20:12:29.301] [IN-GAME] Our summoner ID: 113231038
+[2026-01-15 20:12:29.304] [IN-GAME] Found gameData element
+[2026-01-15 20:12:29.304] [IN-GAME] allPlayers not found in gameData
+[2026-01-15 20:12:29.304] [IN-GAME] Available gameData keys: gameId, gameName, isCustomGame, password, playerChampionSelections, queue, spectatorKey, spectatorsAllowed, teamOne, teamTwo
+[2026-01-15 20:12:29.438] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:12:29.438] [STATUS] Set UI text to Connected
+[2026-01-15 20:12:31.452] [STATUS] Checking connection: Port=57377, Password=924
+[2026-01-15 20:12:31.453] [STATUS] Set UI text to Connected
