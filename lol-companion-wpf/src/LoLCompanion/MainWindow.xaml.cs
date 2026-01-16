@@ -14,16 +14,16 @@ namespace LoLCompanion
         private LockfileManager _lockfileManager;
         private ReadyCheckWatcher _readyCheckWatcher;
         private ChampionData _championData;
-        private bool _autoClickEnabled = false;
         private DispatcherTimer _gameStateTimer;
         private bool _wasInGame = false;
+        private bool _isConnected = false;
 
         public MainWindow()
         {
             InitializeComponent();
             this.Title = "LoL Companion";
             this.Height = 600;
-            this.Width = 400;
+            this.Width = 350;
 
             _championData = new ChampionData();
             _apiClient = new LeagueApiClient();
@@ -34,75 +34,43 @@ namespace LoLCompanion
             _gameStateTimer.Interval = TimeSpan.FromSeconds(5);
             _gameStateTimer.Tick += async (s, e) => await CheckGameState();
 
-            InitializeUI();
+            AutoImportCheckbox.IsChecked = true;
             StartWatching();
         }
 
-        private void InitializeUI()
+        private async void BuildTab_Click(object sender, RoutedEventArgs e)
         {
-            ChampionPanel.Children.Clear();
-
-            foreach (var champion in _championData.GetAllChampions())
-            {
-                var button = new Button
-                {
-                    Content = champion.Value,
-                    Tag = champion.Key,
-                    Width = 80,
-                    Height = 80,
-                    Margin = new Thickness(5)
-                };
-
-                button.Click += (s, e) => OnChampionClick(champion.Key);
-                button.MouseEnter += (s, e) => OnChampionHover(champion.Key);
-
-                ChampionPanel.Children.Add(button);
-            }
+            BuildTabContent.Visibility = Visibility.Visible;
+            BenchTabContent.Visibility = Visibility.Collapsed;
+            SettingsTabContent.Visibility = Visibility.Collapsed;
+            BuildTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#c41e3a"));
+            BenchTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#2d2d2d"));
+            SettingsTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#2d2d2d"));
         }
 
-        private async void OnChampionClick(int championId)
+        private async void BenchTab_Click(object sender, RoutedEventArgs e)
         {
-            await DoImportBuild(championId);
+            BuildTabContent.Visibility = Visibility.Collapsed;
+            BenchTabContent.Visibility = Visibility.Visible;
+            SettingsTabContent.Visibility = Visibility.Collapsed;
+            BuildTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#2d2d2d"));
+            BenchTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#c41e3a"));
+            SettingsTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#2d2d2d"));
         }
 
-        private async void OnChampionHover(int championId)
+        private async void SettingsTab_Click(object sender, RoutedEventArgs e)
         {
-            if (championId > 0)
-            {
-                var championName = _championData.GetChampionName(championId);
-                if (!string.IsNullOrEmpty(championName))
-                {
-                    BuildDisplay.Text = $"Loading build for {championName}...";
-                    await DoImportBuild(championId);
-                }
-            }
+            BuildTabContent.Visibility = Visibility.Collapsed;
+            BenchTabContent.Visibility = Visibility.Collapsed;
+            SettingsTabContent.Visibility = Visibility.Visible;
+            BuildTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#2d2d2d"));
+            BenchTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#2d2d2d"));
+            SettingsTab.Background = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#c41e3a"));
         }
 
-        private async Task DoImportBuild(int championId)
+        private void CloseWindow(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                var championName = _championData.GetChampionName(championId);
-                var build = await _apiClient.GetChampionBuildAsync(championName);
-
-                if (build != null && build.Success)
-                {
-                    BuildDisplay.Text = $"{championName}\nItems: {string.Join(", ", build.ItemIds)}\nRunes: {string.Join(", ", build.RuneIds)}";
-                    
-                    var port = _lockfileManager.GetClientPort();
-                    var password = _lockfileManager.GetClientPassword();
-                    
-                    if (!string.IsNullOrEmpty(port) && !string.IsNullOrEmpty(password))
-                    {
-                        _apiClient.UpdateLcuCredentials(port, password);
-                        await _apiClient.ImportBuildToClientAsync(build, championId, championName);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                BuildDisplay.Text = $"Error: {ex.Message}";
-            }
+            this.Close();
         }
 
         private async Task CheckGameState()
@@ -131,7 +99,87 @@ namespace LoLCompanion
 
         private void ResetBuild()
         {
-            BuildDisplay.Text = "Build cleared - ready for next game";
+            ChampionStatus.Text = "No champion selected";
+            CoreItems.Text = "";
+            OptionalItems.Text = "";
+            RunesDisplay.Text = "";
+        }
+
+        private async Task MonitorChampionSelect()
+        {
+            while (true)
+            {
+                try
+                {
+                    var response = await _apiClient.GetAsync("lol-champ-select/v1/session");
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var content = await response.Content.ReadAsStringAsync();
+                        var session = System.Text.Json.JsonDocument.Parse(content).RootElement;
+
+                        if (session.TryGetProperty("myTeam", out var teamElement))
+                        {
+                            foreach (var player in teamElement.EnumerateArray())
+                            {
+                                if (player.TryGetProperty("championId", out var champIdElem))
+                                {
+                                    int champId = champIdElem.GetInt32();
+                                    if (champId > 0)
+                                    {
+                                        var championName = _championData.GetChampionName(champId);
+                                        if (!string.IsNullOrEmpty(championName) && ChampionStatus.Text != championName)
+                                        {
+                                            ChampionStatus.Text = championName;
+                                            
+                                            if (AutoImportCheckbox.IsChecked == true)
+                                            {
+                                                await DoImportBuild(champId);
+                                            }
+                                        }
+                                        return;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                catch { }
+
+                await Task.Delay(500);
+            }
+        }
+
+        private async Task DoImportBuild(int championId)
+        {
+            try
+            {
+                var championName = _championData.GetChampionName(championId);
+                var build = await _apiClient.GetChampionBuildAsync(championName);
+
+                if (build != null && build.Success)
+                {
+                    var coreItems = build.ItemIds.Count > 0 ? string.Join(", ", build.ItemIds.GetRange(0, System.Math.Min(3, build.ItemIds.Count))) : "None";
+                    var optionalItems = build.ItemIds.Count > 3 ? string.Join(", ", build.ItemIds.GetRange(3, System.Math.Min(3, build.ItemIds.Count - 3))) : "None";
+                    var runes = build.RuneIds.Count > 0 ? string.Join(", ", build.RuneIds.GetRange(0, System.Math.Min(6, build.RuneIds.Count))) : "None";
+
+                    CoreItems.Text = coreItems;
+                    OptionalItems.Text = optionalItems;
+                    RunesDisplay.Text = runes;
+
+                    var port = _lockfileManager.GetClientPort();
+                    var password = _lockfileManager.GetClientPassword();
+
+                    if (!string.IsNullOrEmpty(port) && !string.IsNullOrEmpty(password))
+                    {
+                        _apiClient.UpdateLcuCredentials(port, password);
+                        await _apiClient.ImportBuildToClientAsync(build, championId, championName);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                DebugUtil.LogDebug($"Error importing build: {ex.Message}");
+            }
         }
 
         private async void StartWatching()
@@ -139,27 +187,24 @@ namespace LoLCompanion
             try
             {
                 await _lockfileManager.WatchForClientAsync();
-                
+
                 var port = _lockfileManager.GetClientPort();
                 var password = _lockfileManager.GetClientPassword();
 
                 if (!string.IsNullOrEmpty(port) && !string.IsNullOrEmpty(password))
                 {
                     _apiClient.UpdateLcuCredentials(port, password);
-                    _readyCheckWatcher.Start(int.Parse(port), password);
+                    _isConnected = true;
+                    StatusText.Text = "League Client: Connected";
                     _gameStateTimer.Start();
+                    
+                    _ = MonitorChampionSelect();
                 }
             }
             catch (Exception ex)
             {
                 DebugUtil.LogDebug($"Error starting watchers: {ex.Message}");
             }
-        }
-
-        private void AutoClickToggle_Click(object sender, RoutedEventArgs e)
-        {
-            _autoClickEnabled = !_autoClickEnabled;
-            AutoClickToggle.Content = _autoClickEnabled ? "Auto-Click: ON" : "Auto-Click: OFF";
         }
     }
 }
