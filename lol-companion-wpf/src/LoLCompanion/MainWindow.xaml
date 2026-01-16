@@ -53,12 +53,10 @@
             <Border Padding="15" Background="#1e1e1e">
                 <StackPanel>
                     <TextBlock Text="Auto Accept" Foreground="#c41e3a" FontSize="14" FontWeight="Bold" Margin="0,0,0,10"/>
-                    <CheckBox Name="AutoAcceptCheckbox" Foreground="#ffffff" Margin="0,0,0,5">Auto-accept match</CheckBox>
-                    <TextBlock Foreground="#888888" FontSize="10" Margin="0,0,0,20">Waiting for match...</TextBlock>
+                    <TextBlock Foreground="#888888" FontSize="10" Margin="0,0,0,20">Enabled - Auto-accepts matches automatically</TextBlock>
 
                     <TextBlock Text="Auto Import" Foreground="#c41e3a" FontSize="14" FontWeight="Bold" Margin="0,0,0,10"/>
-                    <CheckBox Name="AutoImportCheckbox" Foreground="#ffffff" Margin="0,0,0,5">Auto-import build on hover</CheckBox>
-                    <TextBlock Foreground="#888888" FontSize="10" Margin="0,0,0,20">Auto imports runes when hovering</TextBlock>
+                    <TextBlock Foreground="#888888" FontSize="10" Margin="0,0,0,20">Enabled - Auto-imports builds in champion select</TextBlock>
 
                     <TextBlock Text="Status" Foreground="#c41e3a" FontSize="14" FontWeight="Bold" Margin="0,0,0,10"/>
                     <TextBlock Name="StatusText" Foreground="#888888" FontSize="11">League Client: Disconnected</TextBlock>

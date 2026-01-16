@@ -34,7 +34,6 @@ namespace LoLCompanion
             _gameStateTimer.Interval = TimeSpan.FromSeconds(5);
             _gameStateTimer.Tick += async (s, e) => await CheckGameState();
 
-            AutoImportCheckbox.IsChecked = true;
             StartWatching();
         }
 
@@ -130,11 +129,7 @@ namespace LoLCompanion
                                         if (!string.IsNullOrEmpty(championName) && ChampionStatus.Text != championName)
                                         {
                                             ChampionStatus.Text = championName;
-                                            
-                                            if (AutoImportCheckbox.IsChecked == true)
-                                            {
-                                                await DoImportBuild(champId);
-                                            }
+                                            await DoImportBuild(champId);
                                         }
                                         return;
                                     }
